@@ -2,7 +2,7 @@
 authors = ["MaidSafe Developers <dev@maidsafe.net>"]
 description = "The Autonomi node binary"
 name = "ant-node"
-version = "0.112.6"
+version = "0.112.7-rc.1"
 edition = "2021"
 license = "GPL-3.0"
 homepage = "https://maidsafe.net"
@@ -28,14 +28,14 @@ upnp = ["ant-networking/upnp"]
 websockets = ["ant-networking/websockets"]
 
 [dependencies]
-ant-build-info = { path = "../ant-build-info", version = "0.1.19" }
-ant-evm = { path = "../ant-evm", version = "0.1.4" }
-ant-logging = { path = "../ant-logging", version = "0.2.40" }
-ant-networking = { path = "../ant-networking", version = "0.19.5" }
-ant-peers-acquisition = { path = "../ant-peers-acquisition", version = "0.5.7" }
-ant-protocol = { path = "../ant-protocol", version = "0.17.15" }
-ant-registers = { path = "../ant-registers", version = "0.4.3" }
-ant-service-management = { path = "../ant-service-management", version = "0.4.3" }
+ant-build-info = { path = "../ant-build-info", version = "0.1.20-rc.1" }
+ant-evm = { path = "../ant-evm", version = "0.1.5-rc.1" }
+ant-logging = { path = "../ant-logging", version = "0.2.41-rc.1" }
+ant-networking = { path = "../ant-networking", version = "0.19.6-rc.1" }
+ant-peers-acquisition = { path = "../ant-peers-acquisition", version = "0.5.8-rc.1" }
+ant-protocol = { path = "../ant-protocol", version = "0.17.16-rc.1" }
+ant-registers = { path = "../ant-registers", version = "0.4.4-rc.1" }
+ant-service-management = { path = "../ant-service-management", version = "0.4.4-rc.1" }
 async-trait = "0.1"
 bls = { package = "blsttc", version = "8.0.1" }
 bytes = { version = "1.0.1", features = ["serde"] }
@@ -85,10 +85,10 @@ walkdir = "~2.5.0"
 xor_name = "5.0.0"
 
 [dev-dependencies]
-ant-protocol = { path = "../ant-protocol", version = "0.17.15", features = ["rpc"]}
+ant-protocol = { path = "../ant-protocol", version = "0.17.16-rc.1", features = ["rpc"]}
 assert_fs = "1.0.0"
-evmlib = { path = "../evmlib", version = "0.1.4" }
-autonomi = { path = "../autonomi", version = "0.2.4", features = ["registers"] }
+evmlib = { path = "../evmlib", version = "0.1.5-rc.1" }
+autonomi = { path = "../autonomi", version = "0.3.0-rc.1", features = ["registers"] }
 reqwest = { version = "0.12.2", default-features = false, features = [
     "rustls-tls-manual-roots",
 ] }

@@ -7,7 +7,7 @@ license = "GPL-3.0"
 name = "ant-peers-acquisition"
 readme = "README.md"
 repository = "https://github.com/maidsafe/autonomi"
-version = "0.5.7"
+version = "0.5.8-rc.1"
 
 [features]
 local = []
@@ -15,7 +15,7 @@ network-contacts = ["ant-protocol"]
 websockets = []
 
 [dependencies]
-ant-protocol = { path = "../ant-protocol", version = "0.17.15", optional = true}
+ant-protocol = { path = "../ant-protocol", version = "0.17.16-rc.1", optional = true}
 clap = { version = "4.2.1", features = ["derive", "env"] }
 lazy_static = "~1.4.0"
 libp2p = { git = "https://github.com/maqi/rust-libp2p.git", branch = "kad_0.46.2", features = [] }
